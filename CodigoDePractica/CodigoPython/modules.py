@@ -14,6 +14,7 @@ import time
 estampatemporal = time.time()
 print(estampatemporal)
 
+
 from time import time
 estampatemporal2 = time()
 print(estampatemporal2)
@@ -25,21 +26,20 @@ print(estampatemporal2)
 #pip install camel case
 #pip freeze
 
-from camelcase import CamelCase
+#from camelcase import CamelCase
 
 #instancion o instancia de camel case
-c = CamelCase()
-print(c.hump('hola otra vez mundo'))
+#c = CamelCase()
+#print(c.hump('hola otra vez mundo'))
 
 
-#Modulo personalizado
+# #Modulo personalizado
 import validator
 from validator import validate_email
 
 email = 'prueba@prueba.com'
 if validate_email(email):
-    print('El correo esta bien')
+    print('El correo esta bien escrito')
 else:
-    print('El correo esta mal')
-
+    print('El correo esta mal escrito')
 

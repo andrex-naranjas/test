@@ -13,12 +13,12 @@ miArchivo.write('Me encanta Python')
 miArchivo.write(' y ROOT')
 miArchivo.close()
 
-#Agregar al archivo
+# #Agregar al archivo
 miArchivo = open('miArchivo.txt','a')
 miArchivo.write(' y tambien C++')
 miArchivo.close()
 
-#Leer de un archivo
+# #Leer de un archivo
 miArchivo = open('miArchivo.txt','r+')
-texto = miArchivo.read(150)
+texto = miArchivo.read(100)
 print(texto)

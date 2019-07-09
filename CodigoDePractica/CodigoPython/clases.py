@@ -8,11 +8,13 @@ class Usuario:
         self.email = email
         self.edad = edad
 
-    def saludos(self):
-        return f'Me llamo {self.nombre} y tengo {self.edad}'
+    def saludos(self,num1=1):
+        print(num1)
+        return 'Me llamo {0} y tengo {1}'.format(self.nombre,self.edad)
 
     def tengo_cumple(self):
         self.edad+=1
+
 
 #Extender la clase Usuario
 class Cliente(Usuario):
@@ -27,14 +29,14 @@ class Cliente(Usuario):
         self.saldo = saldo
         
     def saludos(self):
-        return f'Me llamo {self.nombre}, tengo {self.edad} y mi saldo es {self.saldo}'
-
+        return 'Me llamo {0}, tengo {1} y mi saldo es {2}'.format(self.nombre,self.edad,self.saldo)
+        
         
 #Init un objeto para el usuario
 Andres = Usuario('Andres Ramirez','andres@gmail.com',31)
 print(type(Andres))
 print(Andres.nombre)
-print(Andres.saludos())
+print(Andres.saludos('d'))
 
 Andres.tengo_cumple()
 print(Andres.saludos())
@@ -42,6 +44,10 @@ print(Andres.saludos())
 print('--------------------------')
 
 #Init un Cliente
-Rufina = Cliente('Rufina Madrid', 'rufina@yahoo.com',2)
-Rufina.establecer_saldo(500)
-print(Rufina.saludos())
+Rufina_usuario = Usuario('Rufina Madrid', 'rufina@yahoo.com',2)
+Rufina_cliente = Cliente('Rufina Madrid', 'rufina@yahoo.com',2)
+Rufina_cliente.establecer_saldo(5e10)
+print(Rufina_cliente.saludos())
+print(Rufina_usuario.saludos())
+
+
