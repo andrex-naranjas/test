@@ -3,43 +3,43 @@
 x = 10
 y = 5
 
-#Pode usar operadores de comparacion (==, !=, >, <, >=, <=)
+#Poder usar operadores de comparacion (==, !=, >, <, >=, <=)
 
 #simple if
 if x > y:
-    print(f'{x} es mas grande que {y}')
+   print('{0} es mas grande que {1}'.format(x,y))
 else:
-    print(f'{y} es mas grande que {x}')
+   print('{0} es mas grande que {1}'.format(y,x))
 
 print('-----------')
     
 if x > y:
-    print(f'{x} es mas grande que {y}')
+    print('{0} es mas grande que {1}'.format(x,y))
 elif x==y:
-    print(f'{x} es igual a {y}')
+    print('{0} es igual que {1}'.format(y,x))    
 else:
-    print(f'{y} es mas grande a {x}')
-
+    print('{0} es menor que {1}'.format(x,y))
+    
 
 #if anidados
 
 if x > 2:
   if x <= 10:
-    print(f'{x} es mas grande que 2 e igual/menor a 10')
+    print('{0} es mas grande que 2 e igual/menor a 10'.format(x))
 
 
 #Una forma mejor de hacerlo: usar operadores logicos (and, or, not) se usan para combinar condicionales
 
 #and
 if x > 2 and x <= 10:
-  print(f'{x} es mas grande que 2 e igual/menor a 10')
+  print('{0} es mas grande que 2 e igual/menor a 10'.format(x))
 
 #or  
 if x > 2 or x <= 10:
-  print(f'{x} es mas grande que 2 e igual/menor a 10')
+  print('{0} es mas grande que 2 e igual/menor a 10'.format(x))
 
 if not(x==y):
-    print(f'{x} no es igual a {y}')
+    print('{0} no es igual a {1}'.format(x,y))
 
 
 #Operadores de membresia (not, not in) son usados para verificar si algo esta presente en un objeto
