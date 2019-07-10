@@ -1,0 +1,17 @@
+
+su (va a pedir contrasena: freesoft)
+yum install -y https://centos7.iuscommunity.org/ius-release.rpm
+yum update
+yum install -y python36u python36u-libs python36u-devel python36u-pip
+
+para correr python es
+python3.6 --version
+
+pip3.6 install scikit-learn
+pip3.6 install matplotlib
+
+para correr archivo
+python3.6 miArchivo.py
+
+
+
