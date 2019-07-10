@@ -49,5 +49,3 @@ Rufina_cliente = Cliente('Rufina Madrid', 'rufina@yahoo.com',2)
 Rufina_cliente.establecer_saldo(5e10)
 print(Rufina_cliente.saludos())
 print(Rufina_usuario.saludos())
-
-
